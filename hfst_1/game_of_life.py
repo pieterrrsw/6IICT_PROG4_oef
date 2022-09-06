@@ -40,7 +40,7 @@ def maak_rij_nul(breedte):
 
 
 def maak_veld_nul(hoogte, breedte):
-    """ return een geneste lijst met grootte hoogte x breedte
+    """ return een geneste lijst met grootte: hoogte x breedte
 
         hoogte: het aantal lege lijsten dat gemaakt moet worden.
         breedte: het aantal nullen in iedere lege lijst.
@@ -76,7 +76,7 @@ def maak_veld_nul_levend(veld, kans_levend):
                                                          ]
         >>> print( maak_veld_nul_levend(veld, 0.5) ) --> [
                                                           [1, 0, 1],
-                                                          [9, 0, 1]
+                                                          [0, 0, 1]
                                                          ]
     """
     return None
@@ -278,7 +278,7 @@ def leeft_of_sterft(veld, y, x):
         x: de x-positie van de huidige cel.
         
     
-        De return-waarde MOETEN booleans zijn. Gebruik volgende logica.
+        De return-waarde MOET een boolean zijn. Gebruik volgende logica.
         De huidige cel is levend, het blijft leven als:
             het 2 of 3 levende buren heeft.
         De huidige cel is dood, het komt tot leven als:
@@ -291,17 +291,21 @@ def leeft_of_sterft(veld, y, x):
             [1, 0, 0]
         ]
 
-        >>> print( leeft_of_sterft(veld, 1, 0) ) --> False
-        >>> print( leeft_of_sterft(veld, 2, 1) ) --> False
         >>> print( leeft_of_sterft(veld, 0, 0) ) --> True
+        >>> print( leeft_of_sterft(veld, 0, 1) ) --> True
+        >>> print( leeft_of_sterft(veld, 1, 0) ) --> False
         >>> print( leeft_of_sterft(veld, 2, 0) ) --> False
+        >>> print( leeft_of_sterft(veld, 2, 1) ) --> False
+        
+        In dit voorbeeld blijven enkel de cel linksboven en middenboven levend (1),
+        de rest gaat dood (0). Dit gebeurt in update_veld() OBV de returnde boolean.
     """
     return None
 
 # Je hoeft deze functie niet op te stellen. Overloop hem wel. Snap je wat er gebeurt?
 # Zo nee, vraag om extra uitleg.
 def update_veld(veld):
-    """Update het veld volgens de regels van the game of lige"""
+    """Update het veld volgens de regels van the game of life"""
     # Maak een kopie van het huidige veld
     huidig_veld = copy.deepcopy(veld)
 
