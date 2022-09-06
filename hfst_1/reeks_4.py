@@ -30,16 +30,16 @@ def gemiddelde_lijst(lijst):
 # print( gemiddelde_lijst([1, 2, 3, 4, 5]) )
 # print( gemiddelde_lijst([2, 6, 8, 23, 12, 2]) )
 
-def min_max__lijst(lijst):
+def min_max_lijst(lijst):
     """ return het minimum en het maximum van alle getallen uit een lijst
     
         >>> print( berekeningen([2, 6, 8, 23, 12, 2]) ) --> (2, 23)
     """
     return None
 
-# print( gemiddelde_lijst([3]) )
-# print( gemiddelde_lijst([1, 2, 3, 4, 5]) )
-# print( gemiddelde_lijst([2, 6, 8, 23, 12, 2]) )
+# print( min_max_lijst([3]) )
+# print( min_max_lijst([1, 2, 3, 4, 5]) )
+# print( min_max_lijst([2, 6, 8, 23, 12, 2]) )
 
 
 def kwadraat_lijst(lijst):

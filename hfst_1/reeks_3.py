@@ -19,7 +19,8 @@ def titel(zin):
     
         >>> print( titel("de kat krabt") ) --> De Kat Krabt
     """
-    return None
+    nieuwe_zin = zin.title()
+    return ( nieuwe_zin, zin )
 
 # print( titel("de kat krabt") )
 # print( titel("krullen van de trap af") )
@@ -58,9 +59,9 @@ def is_laag(zin):
     """
     return None
 
-# print( vervang("Dit is fout!") )
-# print( vervang("een twee drie vIer") )
-# print( vervang("een correcte zin") )
+# print( is_laag("Dit is fout!") )
+# print( is_laag("een twee drie vIer") )
+# print( is_laag("een correcte zin") )
 
 def is_getal(kar):
     """ return True of False (boolean!) 
