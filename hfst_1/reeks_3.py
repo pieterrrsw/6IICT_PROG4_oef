@@ -41,7 +41,7 @@ def kort_af(woord):
 def vervang(woord, kar):
     """ return het aangepaste woord 
     
-        Vervang ieder karakter kar door een hoofdletter.
+        Vervang ieder karakter kar door een uitroepteken.
         >>> print( vervang("katten", "t") ) --> ka!!en
     """
     return None
