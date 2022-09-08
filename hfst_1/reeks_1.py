@@ -1,6 +1,6 @@
 # Maak onderstaande functies af.
 # Testen kan MBV de oproepen onder iedere oefeningen.
-# Tip: gebruik CTRL + / om meerdere lijnen in/uit commentaar te zetten.
+# Tip: gebruik CTRL + / om meerdere lijnen in/uit commentaar te zetten. 
 
 def voeg_toe(x,y):
     """ return de som van x en y """
@@ -31,6 +31,8 @@ def seconden_per_dag(dagen):
          
         Indien de oproep zonder argument gebeurt, geef het aantal
         seconden in 1 dag terug. Gebruik een "default value".
+
+        Hier nog wat meer uitleg
     """
     return None
 
