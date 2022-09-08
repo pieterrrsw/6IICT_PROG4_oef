@@ -2,6 +2,7 @@
 # Testen kan MBV de oproepen onder iedere oefeningen.
 # Tip: gebruik CTRL + / om meerdere lijnen in/uit commentaar te zetten.
 # Dit is een test
+# Dit is ook een test
 
 def voeg_toe(x,y):
     """ return de som van x en y """
