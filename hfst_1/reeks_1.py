@@ -4,7 +4,7 @@
 
 def voeg_toe(x,y):
     """ return de som van x en y """
-    return None
+    return x*y
 
 # print( voeg_toe(3,5) )
 # print( voeg_toe(2,9) )
