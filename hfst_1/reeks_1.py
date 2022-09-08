@@ -1,8 +1,6 @@
 # Maak onderstaande functies af.
 # Testen kan MBV de oproepen onder iedere oefeningen.
 # Tip: gebruik CTRL + / om meerdere lijnen in/uit commentaar te zetten.
-# Dit is een test
-# Dit is ook een test
 
 def voeg_toe(x,y):
     """ return de som van x en y """
@@ -66,3 +64,4 @@ def seconden_in_leven(leeftijd, is_man = False):
 # print( seconden_per_jaar(56) )
 
 
+# DIt is een test 3
