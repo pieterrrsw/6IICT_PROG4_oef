@@ -174,5 +174,3 @@ dmypy.json
 cython_debug/
 
 # Add own ignores here
-test_venv/
-/*.txt
