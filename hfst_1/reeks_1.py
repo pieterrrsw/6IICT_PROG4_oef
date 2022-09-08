@@ -62,6 +62,3 @@ def seconden_in_leven(leeftijd, is_man = False):
 # print( seconden_in_leven(0, True) )
 # print( seconden_per_jaar(74, False) )
 # print( seconden_per_jaar(56) )
-
-
-# DIt is een test 3
