@@ -1,0 +1,1 @@
+print("Placeholder voor de oefeningen van hfst 3")
