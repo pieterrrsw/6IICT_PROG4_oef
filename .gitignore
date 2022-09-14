@@ -174,3 +174,4 @@ dmypy.json
 cython_debug/
 
 # Add own ignores here
+hfst_1/life_venv

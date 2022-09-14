@@ -36,7 +36,12 @@ def maak_rij_nul(breedte):
 
         >>> print( maak_rij_nul(3) ) --> [0, 0, 0]
     """
-    return None
+    lijst = []
+
+    for i in range(breedte):
+        lijst.append(0)
+
+    return lijst
 
 
 def maak_veld_nul(hoogte, breedte):
@@ -54,7 +59,12 @@ def maak_veld_nul(hoogte, breedte):
              Het aantal oproepen is gelijk aan de waarde van hoogte.
              Zie ook reeks_4 voor het invoegen van een lijst in een lijst.
     """
-    return None
+    lijst_2D = []
+
+    for i in range(hoogte):
+        lijst_2D.append( maak_rij_nul(breedte) )
+
+    return lijst_2D
 
 def maak_veld_nul_levend(veld, kans_levend):
     """ return een veld, waarbij een aantal van de cellen een waarde 1 bevatten 
@@ -79,9 +89,11 @@ def maak_veld_nul_levend(veld, kans_levend):
                                                           [0, 0, 1]
                                                          ]
     """
-    return None
-                
-
+    for index_rij, rij in enumerate(veld):
+        for index_cel, cel in enumerate(rij):
+            if kans_levend > random.random():
+                veld[index_rij][index_cel] = 1
+    return veld
 
 def get_links(veld, y, x):
     """ return de waarde van de cel links van de huidige cel 
@@ -100,7 +112,9 @@ def get_links(veld, y, x):
         >>> print( get_links(veld, 0, 1) ) --> 1
         >>> print( get_links(veld, 1, 0) ) --> 0
     """
-    return None
+    if x == 0:
+        return 0
+    return veld[y][x-1]
 
 
 def get_rechts(veld, y, x):
@@ -112,15 +126,17 @@ def get_rechts(veld, y, x):
         Als de huidige cel zich op de rechtergrens bevindt, return 0.
 
         veld = [
-            [1, 2],
-            [3, 4]
+            [1, 2, 3],
+            [4, 5, 6],
         ]
 
         >>> print( get_rechts(veld, 1, 1) ) --> 0
         >>> print( get_rechts(veld, 0, 1) ) --> 0
         >>> print( get_rechts(veld, 1, 0) ) --> 2
     """
-    return None
+    if x == len(veld[0])-1:
+        return 0
+    return veld[y][x+1]
 
 
 def get_boven(veld, y, x):
@@ -360,5 +376,5 @@ def main():
         clock.tick(60)
 
 
-if __name__ == "__main__":
-    main()
+# if __name__ == "__main__":
+#     main()
