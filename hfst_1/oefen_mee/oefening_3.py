@@ -1,10 +1,22 @@
-""" 
-Voorbeeld:
+fruitmand = { "appel":3, "banaan":5, "kers":50 }
+print( fruitmand.keys() )
+# Vul in --> return .keys(): 
+print( fruitmand.values() )
+# Vul in --> return .values():
+print( fruitmand.items() )
+# Vul in --> return .items(): 
 
->>> input() = "Dit is een zin"
->>> Dict    = {"Dit": "tiD", "is": "si", "een": "nee", "zin": "niz"}
+"""
+Wat zijn de gelijkenissen van deze waarden met lijsten? Wat zijn de verschillen?
 
-Tip: je hebt al in de reeksen gezien hoe een woord om te keren.
 """
 
-zin = input("Geef een zin op: ")
+"""
+Zijn deze waarden effectief lijsten? Hoe kan je dit testen?
+
+"""
+
+"""
+Indien nee, is het mogelijk om deze waarden naar lijsten om te vormen?
+
+"""
