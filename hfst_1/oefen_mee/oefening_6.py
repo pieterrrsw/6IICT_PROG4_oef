@@ -6,3 +6,14 @@ engels_nederlands = { "last":"laatste", "week":"week", "the":"de",
 "leidend", "modern":"modern", "composer":"componist",
 "composers":"componisten", "two":"twee", "shed":"schuur",
 "sheds":"schuren" }
+
+zin = input("Geef een zin in het engels: ")
+nieuwe_zin = ""
+woorden = zin.split() 
+
+for woord in woorden:
+    if woord in engels_nederlands:
+        nieuwe_zin += f"{engels_nederlands[woord]}"
+        nieuwe_zin += " "
+print(nieuwe_zin)
+
