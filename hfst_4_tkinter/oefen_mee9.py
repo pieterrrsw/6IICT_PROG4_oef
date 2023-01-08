@@ -13,9 +13,9 @@ link_2 = tk.Entry(master=venster, width=33, font=("Helvetica",14),
                   border=10, borderwidth=5)
 link_2.grid(row=1, column=1)
 
+# TODO: pas reset_links aan. Gebruik insert om de gevraagde elementen toe te voegen.
 def reset_links():
-    # TODO: zie oefen mee 9
-    pass
+    link_1.delete(0, tk.END)
 
 knop = tk.Button(master=venster, command=reset_links, 
                  text="Reset input!", width=50)
