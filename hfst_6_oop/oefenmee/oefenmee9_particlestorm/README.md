@@ -6,7 +6,7 @@ In deze toepassing maken jullie een Particle Storm. Dit is een simulatie die de 
   <img src="media/firestorm_version7_2.gif" width="300" height="300"/>
 </p>
 
-Jullie zullen dit niet in een keer ontwikkelen. Bij het ontwikkelen van (grotere) applicaties is het namelijk best om klein te beginnen. Vervolgens kan je de applicatie steeds verder uitbreiden. Jullie zullen starten met een basisimplementatie (versie 1). Na deze basis, zullen jullie de Particle Storm verder verbeteren en uitbreiden. Dit gebeurt aan de hand van de instructies in deze README. Opgelet, de README vertelt je wat te doen, niet hoe. Experimenteren is dus noodzakelijk. Er zijn in totaal X versies. Probeer zo ver mogelijk te raken!
+Jullie zullen dit niet in een keer ontwikkelen. Bij het ontwikkelen van (grotere) applicaties is het namelijk best om klein te beginnen. Vervolgens kan je de applicatie steeds verder uitbreiden. Jullie zullen starten met een basisimplementatie (versie 1). Na deze basis, zullen jullie de Particle Storm verder verbeteren en uitbreiden. Dit gebeurt aan de hand van de instructies in deze README. Opgelet, de README vertelt je wat te doen, niet hoe. Experimenteren is dus noodzakelijk. Er zijn in totaal 7 versies. Volledig afmaken is niet vereist. Probeer zo ver mogelijk te raken!
 
 ### Tip
 Iedere versie bouwt verder op de vorige. Je zal constant code moeten wijzigen. Het is dan ook een goed idee om een kopie te maken van de laatste stabiele versie. Zo kan je altijd teruggaan, mocht dit nodig zijn.
@@ -24,7 +24,7 @@ Op het einde van deze versie moet `particle_storm.py` uitvoeren, dit resultaat g
 De eerste stap is het bepalen van de eigenschappen/methoden van **BoringParticle**. Maak hiervoor gebruik van onderstaand stappenplan.
 1. Schrijf eerst uit welke zaken er (nog) moeten gebeuren. Je kan je hiervoor baseren op de ontbrekende code in `particle_storm.py`.
 2. Bekijk de lijst uit stap 1. Wat moet je van een partikel weten om deze taken uit te voeren? Dit zijn de eigenschappen.
-3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden.
+3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden (tip: je kan je hiervoor ook baseren op TODO 2 in `particle_storm.py`).
 
 ### Tip
 Het is eenvoudiger om de positie van een partikel tussen 0 en 1 te laten vari?ren. 
@@ -37,7 +37,7 @@ Hierna kan je in `particle_storm.py` het partikel op het scherm tekenen. Dit doo
 </p>
 
 ## Versie 2
-In versie 1 bewegen alle partikels even snel. Dit is vrij saai. Leuker is als deze, net als de richting, willekeurig is. Laat de snelheid van een partikel vari?ren tussen 0 en de meegegeven snelheid. Na het resetten van een partikel, moet deze een nieuwe willekeurige snelheid krijgen.
+In versie 1 bewegen alle partikels even snel. Dit is vrij saai. Leuker is als deze, net als de richting, willekeurig is. Laat de snelheid van een partikel varieren tussen 0 en de meegegeven snelheid. Na het resetten van een partikel, moet deze een nieuwe willekeurige snelheid krijgen.
 <p align="center">
   <img src="media/firestorm_versie2_120fps.gif" width="300" height="300"/>
 </p>
