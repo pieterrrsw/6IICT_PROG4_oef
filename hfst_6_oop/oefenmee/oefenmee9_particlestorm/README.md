@@ -65,7 +65,7 @@ afstand = snelheid * fps * 1/fps
         = snelheid * fps * interval
         = snelheid
 ```
-!Partikels bewegen een afstand gelijk aan de snelheid, onafhankelijk van fps!
+Zoals je kan zien is de bewogen afstand na 1 seconde altijd gelijk aan de snelheid.
 
 Op het einde van deze versie moet de simulatie fps-onafhankelijk zijn. Links toont de simulatie bij 10 fps, rechts bij 120 fps. Ze bewegen even snel! Merk wel op dat de simulatie er bij 10 fps veel hakkeriger uitziet.
 
