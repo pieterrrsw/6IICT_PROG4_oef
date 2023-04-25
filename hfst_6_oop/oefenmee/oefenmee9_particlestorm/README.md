@@ -147,7 +147,7 @@ Na botsen met horizontale rand:
 ```
 
 ## Versie 7
-Voeg een klasse **GravitationalParticle** toe aan `particle.py`. Importeer deze ook in `particle_storm.py` & voeg ze toe aan de lijst *particles*. Deze partikels zijn aangetrokken tot het midden van het scherm. Je zal hiervoor een soort zwaartekracht moeten implementeren. De kleur moet veranderen afhankelijk van hoever deze van het midden is. Paars (255,0,255) is perfect in het midden, cyaan (0,255,255) is de uiterste rand. Iedere afstnad hiertussen moet een mengeling tussen paars & cyaan zijn.
+Voeg een klasse **GravitationalParticle** toe aan `particle.py`. Importeer deze ook in `particle_storm.py` & voeg ze toe aan de lijst *particles*. Deze partikels zijn aangetrokken tot het midden van het scherm. Je zal hiervoor een soort zwaartekracht moeten implementeren. De kleur moet veranderen afhankelijk van hoever deze van het midden is. Paars (255,0,255) is perfect in het midden, cyaan (0,255,255) is de uiterste rand. Iedere afstand hiertussen moet een mengeling tussen paars & cyaan zijn.
 <p align="center">
   <img src="media/firestorm_version7_1.gif" width="300" height="300"/>
   <img src="media/firestorm_version7_2.gif" width="300" height="300"/>
