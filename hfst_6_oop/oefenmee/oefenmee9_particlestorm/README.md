@@ -27,7 +27,7 @@ De eerste stap is het bepalen van de eigenschappen/methoden van **BoringParticle
 3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden.<br> (je kan je hiervoor ook baseren op TODO 2 in `particle_storm.py`)
 
 ### Tip
-Het is eenvoudiger om de positie van een partikel tussen 0 en 1 te laten vari?ren. 
+Het is eenvoudiger om de positie van een partikel tussen 0 en 1 te laten varieren. 
 - 0 is hierbij de linker- & bovengrens. 
 - 1 is de rechter- & ondergrens.
 
@@ -35,6 +35,7 @@ Hierna kan je in `particle_storm.py` het partikel op het scherm tekenen. Dit doo
 <p align="center">
   <img src="media/partikel_mapping.png" width="600" height="300"/>
 </p>
+Op deze manier zal de startpositie van ieder partikel dus gelijk zijn aan (0.5, 0.5).
 
 ## Versie 2
 In versie 1 bewegen alle partikels even snel. Dit is vrij saai. Leuker is als deze, net als de richting, willekeurig is. Laat de snelheid van een partikel varieren tussen 0 en de meegegeven snelheid. Na het resetten van een partikel, moet deze een nieuwe willekeurige snelheid krijgen.
