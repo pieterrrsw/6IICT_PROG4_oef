@@ -121,7 +121,7 @@ Maak een nieuwe klasse **BouncingParticle**  aan in `particle.py`. Importeer dez
 Partikels van BouncingParticle zullen tegen de rand botsen, niet resetten. Na een botsing zal hun hoek wijzigen. Dit afhankelijk van de muur waarmee ze botsen.
 ```
 
-Alle partikels van **BouncingParticle** zijn afwisselen geel (255,0,255) en groen (0,0,255). Ze wisselen van kleur nadat ze botsen. 
+Alle partikels van **BouncingParticle** zijn afwisselen geel (255,0,255) en blauw (0,0,255). Ze wisselen van kleur nadat ze botsen. 
 <p align="center">
   <img src="media/firestorm_version6_1.gif" width="300" height="300"/>
   <img src="media/firestorm_version6_2.gif" width="300" height="300"/>
@@ -129,12 +129,15 @@ Alle partikels van **BouncingParticle** zijn afwisselen geel (255,0,255) en groe
 
 ### Tip
 De richting wijzigen kan heel moeilijk of heel makkelijk zijn. Dit afhankelijk van hoe je de beweging berekent. In dit geval is het net het eenvoudigst om meteen uit te gaan van een snelheid in de x- en y-richting. Hoeken en goniometrie dus het best achterwegen laten!
-```math
+
 Na botsen met verticale rand:
+```math
   v_x = -v_x
   v_y = v_y
+```
 
 Na botsen met horizontale rand:
+```math
   v_x = v_x
   v_y = -v_y
 ```
