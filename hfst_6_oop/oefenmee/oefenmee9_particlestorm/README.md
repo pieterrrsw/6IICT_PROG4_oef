@@ -16,7 +16,7 @@ Je hebt 2 bestanden gekregen om mee te starten.
 * `particle.py`: bevat de klasse **BoringParticle**, waarmee alle object partikels gemaakt worden. Dit bestand is momenteel nog nagenoeg leeg. Je zal zelf moeten bepalen welke eigenschappen/methoden noodzakelijk zijn.
 * `particle_storm.py`: bevat de pygame applicatie. Dit bestand is, op 2 plekken na, compleet. Je zal de code aanvullen op basis van de klasse **BoringParticle** in `particle.py`.
 
-Op het einde van deze versie moet `particle_storm.py` uitvoeren, dit resultaat geven. Je hebt een aantal partikels die met een vaste snelheid een willekeurige richting uitgaan. Eenmaal de rand bereikt is, reset het partikel terug naar het midden. Het zal nu een nieuwe willekeurige richting uitgaan.
+Op het einde van deze versie moet `particle_storm.py` uitvoeren dit resultaat geven. Je hebt een aantal partikels die met een vaste snelheid een willekeurige richting uitgaan. Eenmaal de rand bereikt is, reset het partikel terug naar het midden. Het zal nu een nieuwe willekeurige richting uitgaan.
 <p align="center">
   <img src="media/firestorm_versie1_120fps.gif" width="300" height="300"/>
 </p>
@@ -24,7 +24,7 @@ Op het einde van deze versie moet `particle_storm.py` uitvoeren, dit resultaat g
 De eerste stap is het bepalen van de eigenschappen/methoden van **BoringParticle**. Maak hiervoor gebruik van onderstaand stappenplan.
 1. Schrijf eerst uit welke zaken er (nog) moeten gebeuren. Je kan je hiervoor baseren op de ontbrekende code in `particle_storm.py`.
 2. Bekijk de lijst uit stap 1. Wat moet je van een partikel weten om deze taken uit te voeren? Dit zijn de eigenschappen.
-3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden.<br> (je kan je hiervoor ook baseren op TODO 2 in `particle_storm.py`)
+3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden.<br> (kijk hiervoor zeker naae TODO 2 in `particle_storm.py`)
 
 ### Tip
 Het is eenvoudiger om de positie van een partikel tussen 0 en 1 te laten varieren. 
@@ -65,18 +65,17 @@ afstand = snelheid * fps * 1/fps
         = snelheid * fps * interval
         = snelheid
 ```
-Zoals je kan zien is de bewogen afstand na 1 seconde altijd gelijk aan de snelheid.
+Zoals je kan zien is de bewogen afstand na 1 seconde vanaf nu altijd enkel afhankelijk van de snelheid.
 
 Op het einde van deze versie moet de simulatie fps-onafhankelijk zijn. Links toont de simulatie bij 10 fps, rechts bij 120 fps. Ze bewegen even snel! Merk wel op dat de simulatie er bij 10 fps veel hakkeriger uitziet.
 
-When implemented correctly, this is how the simulation can look (left is 10 FPS, right is 120 FPS). The particles seem to move the same distance. Do note that the simulation seems choppier when ran at 10 FPS.
 <p align="center">
   <img src="media/firestorm_version3_10fps.gif" width="300" height="300"/>
   <img src="media/firestorm_version3_120fps.gif" width="300" height="300"/>
 </p>
 
 ## Versie 4
-De huidige partikels zijn saai. Daarom dat ze ook uit de klasse **BoringParticle** komen. Het zou leuk zijn als partikels verschillende bewegingspatronen hebben. Bijvoorbeeld botsen tegen de muur, meedraaiend met de klok, gravitationele aantrekking tot het midden, ... .
+De huidige partikels zijn saai. Daarom heet de klasse ook **BoringParticle**. Het zou leuk zijn als partikels verschillende bewegingspatronen hebben. Bijvoorbeeld botsen tegen de muur, meedraaiend met de klok, gravitationele aantrekking tot het midden, ... .
 
 Maak een nieuwe klasse **SpinningParticle** aan in `particle.py`. importeer deze ook in `particle_storm.py` & voeg ze toe aan de lijst *particles*. Deze klasse is bijna identiek aan **BoringParticle**. Er is echter een belangrijk verschil.
 ```
@@ -91,14 +90,16 @@ Het resultaat ziet er als volgt uit. Alle BoringParticles zijn in dit voorbeeld 
 ### Tip
 De richting wijzigen kan heel moeilijk of heel makkelijk zijn. Dit afhankelijk van hoe je de beweging berekent. Gebruik je hiervoor een snelheid in de x- en y-richting? Dan kan je best naar een andere methode overgaan.
 
-Bekijk onderstaande figuur. Jullie gebruiken momenteel de rode en blauwe pijl om de snelheid te bepalen. Er is echter ook een andere manier. Combineer de zwarte pijl en de groene hoek.
+Bekijk onderstaande figuur. Het is mogelijk om de partikels te bewegen via de rode en blauwe pijl. Dit komt overeen met een onafhankelijke snelheid in de x- en y-richting. Er is echter ook een andere manier. Combineer de zwarte pijl en de groene hoek.
 <p align="center">
   <img src="media/afstand_bepalen.png" width="150" height="150"/>
 </p>
 
-Je kan dan de snelheid in de x- en y-richting nu bepalen met goniometrie. Deze hoek moet een willekeurig getal zijn tussen 0 en 2*π.
+Je kan dan de snelheid in de x- en y-richting bepalen met goniometrie. Deze hoek moet een willekeurig getal zijn tussen 0 en 2*π.
 ```math
 v_x = v*cos(θ)
+```
+```math
 v_y = v*sin(θ)
 ```
 
