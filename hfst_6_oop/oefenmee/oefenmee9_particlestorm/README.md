@@ -24,7 +24,7 @@ Op het einde van deze versie moet `particle_storm.py` uitvoeren, dit resultaat g
 De eerste stap is het bepalen van de eigenschappen/methoden van **BoringParticle**. Maak hiervoor gebruik van onderstaand stappenplan.
 1. Schrijf eerst uit welke zaken er (nog) moeten gebeuren. Je kan je hiervoor baseren op de ontbrekende code in `particle_storm.py`.
 2. Bekijk de lijst uit stap 1. Wat moet je van een partikel weten om deze taken uit te voeren? Dit zijn de eigenschappen.
-3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden (tip: je kan je hiervoor ook baseren op TODO 2 in `particle_storm.py`).
+3. Bekijk opnieuw de lijst uit stap 1. Welke zaken moet het partikel zelf uitvoeren? Dit zijn de methoden (je kan je hiervoor ook baseren op TODO 2 in `particle_storm.py`).
 
 ### Tip
 Het is eenvoudiger om de positie van een partikel tussen 0 en 1 te laten vari?ren. 
