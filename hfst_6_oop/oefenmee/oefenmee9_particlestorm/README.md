@@ -45,24 +45,27 @@ In versie 1 bewegen alle partikels even snel. Dit is vrij saai. Leuker is als de
 
 
 ## Versie 3
-Versie 2 heeft mogelijks een ernstig gebrek. Ga naar `particle_storm.py` en wijzig de variabele fps naar 10. Zijn de partikels trager? Dan is je simulatie FPS-afhankelijk. Als dit niet het geval is, mag je verdergaan naar versie 3.
+Versie 2 heeft mogelijks een ernstig gebrek. Ga naar `particle_storm.py` en wijzig de variabele fps naar 10. Zijn de partikels trager? Dan is je simulatie FPS-afhankelijk. Als dit niet het geval is, mag je verdergaan naar versie 4.
 <p align="center">
   <img src="media/firestorm_versie2_10fps.gif" width="300" height="300"/>
 </p>
 
 De partikels bewegen met behulp van een methode. Deze methode wordt opgeroepen in de while-loop van `particle_storm.py`. De klok zorgt ervoor dat deze loop *fps* keer per seconde herhaalt. Omdat de fps gedaald is van 120 naar 10, bewegen de partikels exact 12x trager.
-```math
+
 Hoever is partikel bewogen na 1 seconde?
+```math
 afstand = snelheid * fps 
 ```
 
 De partikels moeten na 1 seconde evenver bewegen, onafhankelijk van de fps. Dit kan door de beweging te vermenigvuldigen met *1/fps*. *1/fps* is de tijd tussen twee frames. De variabele *interval* in `particle_storm.py` geeft deze tijd.
-```math
+
 Hoever is partikel bewogen na 1 seconde?
+```math
 afstand = snelheid * fps * 1/fps
         = snelheid * fps * interval
-        = snelheid !Partikels bewegen een afstand gelijk aan de snelheid, onafhankelijk van fps!
+        = snelheid
 ```
+!Partikels bewegen een afstand gelijk aan de snelheid, onafhankelijk van fps!
 
 Op het einde van deze versie moet de simulatie fps-onafhankelijk zijn. Links toont de simulatie bij 10 fps, rechts bij 120 fps. Ze bewegen even snel! Merk wel op dat de simulatie er bij 10 fps veel hakkeriger uitziet.
 
