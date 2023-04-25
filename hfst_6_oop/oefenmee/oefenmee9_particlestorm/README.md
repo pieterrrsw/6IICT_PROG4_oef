@@ -133,12 +133,16 @@ De richting wijzigen kan heel moeilijk of heel makkelijk zijn. Dit afhankelijk v
 Na botsen met verticale rand:
 ```math
   v_x = -v_x
+```
+```math
   v_y = v_y
 ```
 
 Na botsen met horizontale rand:
 ```math
   v_x = v_x
+```
+```math
   v_y = -v_y
 ```
 
