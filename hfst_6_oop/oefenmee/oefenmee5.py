@@ -9,5 +9,5 @@ class Kat:
 kater = Kat("Marcel", 9)
 kater.oud()
 
-kitten = Kat("Fred", 1)
+kitten = Kat("Freddy", 1)
 kitten.oud()
